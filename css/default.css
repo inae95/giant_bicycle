@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+.container{
+  max-width:1200px; margin:0 auto; padding:0 20px;
+}
+header{
+  height:70px;
+  display:flex; flex-flow:row wrap; justify-content:space-between; align-items: center;
+}
+.logo{
+  width:124px; height:18px;
+}
+.logo img{
+  width:100%; height:100%;
+}
+
+/* nav */
+.menu{
+  /* width:352px */
+  /* width:29.33333333333333%; */
+  /* width:60%; */
+}
+nav ul li{
+  float: right; padding:0 20px;
+}
+
+/* 서브내비 */
+.hidemenu{
+  position:absolute; top:100px; left:0; padding-left:50%;
+  display:flex;
+  width:80%; transform:translate(-25%, 0)
+  /* display:none; */
+}
+.hidemenu_list{
+  display:flex; flex-flow:column wrap;
+  max-width:147px;/*  width:17.6666666667%;  */padding-right:10%; font-size: 15px;
+} 
+.hidemenu_list:nth-child(4){
+  padding:0;
+}
+.hidemenu_list p{
+  font-weight:500; padding-bottom: 20px;
+}
+.hidemenu_list .submenu li{
+  font-weight:400; padding:5px 0; float:left;
+}
+.hidemenu_list .submenu li{
+}
+
+
+/* search */
+.search{
+  padding-left:20px;
+  width:17px;
+  justify-content:flex-end;
+}
+
+
+
+/* main_banner */
+.main_banner{
+  height:410px; margin-bottom:90px;
+  background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0)), url(../images/H2Pro_banner_desktop.jpg) no-repeat; background-size:cover; background-position:right;
+}
+.banner_tit{
+  padding:170px 0 0 40px;
+}
+h1{
+  font-size:2rem; font-weight:600; color:white;
+}
+h2{
+  font-size:1.5rem; font-weight:500; font-style:italic; color:white; padding-bottom:60px;
+}
+.more_box{
+  width:140px; height:40px; border:1px solid white; font-weight:300; color:white; text-align:center; line-height:2.5rem;
+  box-sizing:border-box;
+}
+.more_box:hover{
+  background-color:white; border:none; color:black
+}
+/* featured */
+.featured{
+  display:flex; flex-flow:row wrap; justify-content:space-between; align-items:center;
+}
+.feat_tit{
+  display:flex; flex-flow:row wrap; align-items:center;
+}
+h3{
+  float:left;
+  padding-right:30px; font-size:1.8rem; font-weight:600;
+}
+.feat_tit p{
+  position:relative; color:#666;
+}
+.feat_tit p::after{
+  position:absolute; top:5px; left:-15px;
+  display:block; content:''; height:16px; border-left:1px solid #666;
+}
+.feat_category ul li{
+  display:inline-block;
+}
+.feat_category ul li:nth-of-type(1){
+  font-weight:600;
+}
+.feat_category ul li:nth-of-type(2){
+  padding:0 30px;
+}
