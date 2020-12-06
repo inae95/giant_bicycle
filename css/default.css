@@ -44,8 +44,6 @@ nav ul li{
 .hidemenu_list .submenu li{
   font-weight:400; padding:5px 0; float:left;
 }
-.hidemenu_list .submenu li{
-}
 
 
 /* search */
@@ -72,7 +70,7 @@ h2{
   font-size:1.5rem; font-weight:500; font-style:italic; color:white; padding-bottom:60px;
 }
 .more_box{
-  width:140px; height:40px; border:1px solid white; font-weight:300; color:white; text-align:center; line-height:2.5rem;
+  width:140px; height:40px; border:1px solid white; font-weight:300; color:white; text-align:center; line-height:2.4rem;
   box-sizing:border-box;
 }
 .more_box:hover{
@@ -81,6 +79,7 @@ h2{
 /* featured */
 .featured{
   display:flex; flex-flow:row wrap; justify-content:space-between; align-items:center;
+  margin-bottom:100px;
 }
 .feat_tit{
   display:flex; flex-flow:row wrap; align-items:center;
@@ -104,4 +103,83 @@ h3{
 }
 .feat_category ul li:nth-of-type(2){
   padding:0 30px;
+}
+
+/* product */
+.product{
+  padding:0 52px 0 52px; margin-bottom:120px;
+}
+.product ul{
+  display:flex; flex-flow:row wrap; justify-content:space-between;
+}
+.product li{
+  width:240px;
+}
+.product li:nth-of-type(2),
+.product li:nth-of-type(5){
+  padding:0 70px 82px 70px;
+}
+.product img{
+  width:240px;
+}
+.product_tit{
+  text-align:center;
+}
+h4{
+  font-weight:400;
+}
+.product_tit p:nth-of-type(1){
+  font-weight:300; color:#666; padding:10px 0 15px 0;
+}
+.product_tit p:nth-of-type(2),
+.product_tit.pro_tit_feat>p{
+  font-size:1.2rem; font-weight:400; color:#333; padding-bottom:16px;
+}
+.product_tit p:nth-of-type(3){
+  display:block;
+  width:50px; height:24px; margin:0 auto;
+  font-size:14px; line-height:1.4rem; color: white; background-color:#DD4A21;
+}
+.product_more_btn{
+  width:140px; height:40px; border:1px solid #333; text-align:center; line-height:2.5rem;
+  margin:0 auto;
+}
+.product_more_btn a{
+  display:block;
+  width:100%; height:100%;
+}
+
+/* bicy_search */
+h5{
+  position:relative;
+  padding:0 0 50px 0; text-align:center;
+  font-size:1.8rem; font-weight:600;
+
+}
+h5::before{
+  position:absolute; top:-30px; left:50%;
+  display:block; content:''; height:20px; border-left:1px solid #333;
+}
+
+.bicycle_list{
+  display:flex; flex-flow:row; justify-content:space-between;
+}
+
+.bicycle_search{
+}
+/* image */
+.bicycle_search{
+  position:relative;
+}
+.bicycle_img{
+  width:320px; height:217px;
+}
+.bicycle_img img{
+  width:100%; height:100%;
+  background:url(../images/list_atc1.jpg) no-repeat; background-size:cover;
+}
+
+.bicycle_txt{
+  position:absolute; top:0; left:0;
+  padding:30px 30px;
 }
