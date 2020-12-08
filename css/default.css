@@ -57,7 +57,7 @@ nav ul li{
 
 /* main_banner */
 .main_banner{
-  height:410px; margin-bottom:90px;
+  height:410px; margin-bottom:140px;
   background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0)), url(../images/H2Pro_banner_desktop.jpg) no-repeat; background-size:cover; background-position:right;
 }
 .banner_tit{
@@ -86,7 +86,7 @@ h2{
 }
 h3{
   float:left;
-  padding-right:30px; font-size:1.8rem; font-weight:600;
+  padding-right:30px; font-size:1.6rem; font-weight:600;
 }
 .feat_tit p{
   position:relative; color:#666;
@@ -104,10 +104,9 @@ h3{
 .feat_category ul li:nth-of-type(2){
   padding:0 30px;
 }
-
 /* product */
 .product{
-  padding:0 52px 0 52px; margin-bottom:120px;
+  padding:0 52px 0 52px; margin-bottom:140px;
 }
 .product ul{
   display:flex; flex-flow:row wrap; justify-content:space-between;
@@ -122,23 +121,26 @@ h3{
 .product img{
   width:240px;
 }
+.product img:hover{
+  transform:scale(1.1);
+}
 .product_tit{
-  text-align:center;
+  text-align:center; padding-top:5px;
 }
 h4{
   font-weight:400;
 }
 .product_tit p:nth-of-type(1){
-  font-weight:300; color:#666; padding:10px 0 15px 0;
+  font-weight:300; color:#666; padding:10px 0 20px 0;
 }
 .product_tit p:nth-of-type(2),
 .product_tit.pro_tit_feat>p{
-  font-size:1.2rem; font-weight:400; color:#333; padding-bottom:16px;
+  font-size:1.2rem; font-weight:600; color:#333; padding-bottom:16px;
 }
 .product_tit p:nth-of-type(3){
   display:block;
   width:50px; height:24px; margin:0 auto;
-  font-size:14px; line-height:1.4rem; color: white; background-color:#DD4A21;
+  font-size:14px; line-height:1.3rem; color: white; background-color:#DD4A21;
 }
 .product_more_btn{
   width:140px; height:40px; border:1px solid #333; text-align:center; line-height:2.5rem;
@@ -148,38 +150,240 @@ h4{
   display:block;
   width:100%; height:100%;
 }
+.product_more_btn a:hover{
+  background-color:black; color:white;
+}
+
 
 /* bicy_search */
+.bicy_search{
+  margin-bottom:140px;
+}
 h5{
   position:relative;
-  padding:0 0 50px 0; text-align:center;
-  font-size:1.8rem; font-weight:600;
-
+  padding:0 0 60px 0; text-align:center;
+  font-size:1.6rem; font-weight:600;
 }
 h5::before{
   position:absolute; top:-30px; left:50%;
   display:block; content:''; height:20px; border-left:1px solid #333;
 }
-
 .bicycle_list{
   display:flex; flex-flow:row; justify-content:space-between;
 }
-
 .bicycle_search{
 }
 /* image */
 .bicycle_search{
   position:relative;
 }
-.bicycle_img{
-  width:320px; height:217px;
+.bicycle_search:nth-of-type(2){
+  margin:0 40px;
 }
 .bicycle_img img{
   width:100%; height:100%;
-  background:url(../images/list_atc1.jpg) no-repeat; background-size:cover;
 }
-
 .bicycle_txt{
   position:absolute; top:0; left:0;
-  padding:30px 30px;
+  display:block; 
+  width:100%; height:100%; opacity:0; transition:0.3s;
+  font-weight:500; font-size:1.3rem;
+}
+.bicycle_txt P{
+  font-size:1.2rem; font-weight:400; text-align:center; padding:30% 0; color:white
+}
+.bicycle_search::before,
+.bicycle_search::after,
+.bicycle_txt::before,
+.bicycle_txt::after{
+  width:1px; height:1px;
+  position: absolute;
+  content: '';
+  background-color:white;
+  z-index: 100;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  /* opacity: 0.8; */
+}
+.bicycle_search::before,
+.bicycle_search::after{
+  width:0%; height:2px; z-index: 20;
+}
+.bicycle_search::before{
+  top:0; left:0;
+}
+.bicycle_search::after{
+  bottom:0; right:0;
+}
+.snip1273:hover figcaption,
+.snip1273.hover figcaption {
+  opacity:1;
+}
+.bicycle_txt::before,
+.bicycle_txt::after{
+  width:2px; height:0%; z-index: 25;
+}
+.bicycle_txt::before{
+  right:0; top:0;
+}
+.bicycle_txt::after{
+  left:0; bottom:0;
+}
+/* 이미지 hover */
+.bicycle_search:hover .bicycle_txt{
+  background-color:rgba(0,0,0,0.7);z-index: 5;
+}
+.bicycle_search:hover img,
+.bicycle_search.hover img{
+  opacity:1;
+}
+.bicycle_search:hover .bicycle_txt,
+.bicycle_search.hover .bicycle_txt{
+  opacity:1;
+}
+.bicycle_search:hover .bicycle_txt::before,
+.bicycle_search.hover .bicycle_txt::before,
+.bicycle_search:hover .bicycle_txt::after,
+.bicycle_search.hover .bicycle_txt::after{
+  height:100%;
+}
+.bicycle_search:hover::before,
+.bicycle_search.hover::before,
+.bicycle_search:hover::after,
+.bicycle_search.hover::after{
+  width:100%;
+}
+.bicycle_search:hover::before,
+.bicycle_search.hover::before,
+.bicycle_search:hover::after,
+.bicycle_search.hover::after,
+.bicycle_search:hover .bicycle_txt::before,
+.bicycle_search.hover .bicycle_txt::before,
+.bicycle_search:hover .bicycle_txt::after,
+.bicycle_search.hover .bicycle_txt::after{
+  opacity:0.5;
+}
+
+
+/* ride_unleashed */
+.ride_unleashed{
+  display:flex; flex-flow:row wrap; justify-content:center; align-items:flex-end;
+  padding-bottom:140px;
+}
+.ride_tit{
+  /* 100 */
+  padding-right:8.333333333333333%;
+}
+.ride_tit h5,
+.bold_tit h5{
+  text-align:left; padding-bottom:0;
+}
+.ride_tit h5::before,
+.bold_tit h5::before{
+  display:none;
+}
+.ride_tit p,
+.bold_tit p{
+  font-size:1rem; padding-bottom:40px;
+}
+.ride_btn,
+.bold_btn{
+  width:180px; height:40px; border-radius:30px; border:none; outline:none; padding:0;
+  font-weight:500; background-color:#ffce00; box-shadow: 0px 0px 5px #ffce00;
+}
+.ride_btn a,
+.bold_btn a{
+  display:block;
+  width:100%; height:100%; line-height:40px;
+  font-size:1rem;
+}
+.ride_btn:hover,
+.bold_btn:hover{
+  background-color:#efefef; box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.rid_img{
+  width:60%; height:300px; text-indent:-999999px;
+  background:url(../images/GIANT_JoshBerry_TCR_Banner_Desktop_1601408212.jpg) no-repeat; background-size:cover; background-position:center
+}
+.ride_unleashed img{
+  width:100%;
+}
+
+
+/* news */
+.news{
+  padding-bottom:140px;
+}
+.news ul{
+  display:flex; flex-flow:row wrap; justify-content:center;
+}
+.news ul li{
+  display:block;
+  /* 243 */
+  width:20.25%;
+}
+.news ul li:nth-child(2){
+  padding:0 40px;
+}
+.news ul li:nth-child(3){
+  padding-right:40px;
+}
+.news img{
+  height:180px; padding-bottom:30px;
+}
+.new_txt p{
+  font-size:14px; color:#666; padding-bottom:10px; color:#333;
+}
+.new_txt p:last-child{
+  font-size:1rem; font-weight:500;
+}
+.new_txt span{
+  font-weight:600;
+}
+
+
+/* bold */
+.bold_moves{
+  display:flex; flex-flow:row wrap; justify-content:center;
+  padding-bottom:140px;
+}
+.bold_img{
+  width:50.58333333333333%; height:330px;
+  background:url(../images/2020_Giant_STP_24_ACTION_header_WEB_1920x1000_1603122588.jpg) no-repeat; background-size:cover; background-position:center
+}
+.bold_tit{
+  padding-left:8.333333333333333%;
+}
+
+
+/* footer */
+footer{
+  height:450px; background-color:#0C2340;
+}
+footer .sub_menu{
+  display:flex; flex-flow:row wrap; justify-content:space-between;
+  width:80%; padding:80px 0;
+}
+footer .sub_menu p{
+  font-weight:600; padding-bottom:25px; color:rgb(209, 209, 209);
+}
+footer .sub_menu_list:nth-of-type(4) p{
+  font-weight:500; 
+}
+footer .sub_menu li{
+  font-size:14px; padding-bottom:15px;
+}
+footer .sub_menu a{
+  color:rgb(209, 209, 209);
+}
+footer .sub_menu a:hover{
+  text-decoration:underline; color:white;
+}
+.sub_menu_list:nth-child(4) ul li{
+  display:inline-block;
+  font-size: 1.2rem; padding-right:20px;
+}
+
+h6{
+  font-size:14px; color:#333; padding:20px 0; text-align:center;
 }
