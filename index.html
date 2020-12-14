@@ -395,15 +395,29 @@
   );
 
 
-  var search = document.querySelector('.fa-search');
-  var searchHide = document.querySelector('.sear_hide');
+  var searicon = document.querySelector('.fa-search');
+  var searbar = document.querySelector('.sear_hide');
 
-  search.addEventListener('click', function(){
-    // searchHide.classList.remove('active');
-    searchHide.classList.add('active'); 
+  searicon.addEventListener('click', function(){
+    // searbar.classList.remove('active');
+    searbar.classList.add('active');
   });
 
 
 
+
+
+
+  // nav
+  var navToggle = document.querySelector('nav');
+  var toggleBtn = document.querySelector('.fa-bars');
+
+  $(document).ready(function(){
+    $(toggleBtn).click(function(){
+      $(navToggle).toggle();
+    });
+  })
+
+  
 </script>
 </html>
