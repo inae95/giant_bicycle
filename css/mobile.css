@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@media (max-width:730px){
+  .featured{
+    margin-bottom:50px;
+  }
+  h3{
+    padding:0 0 10px 0;
+  }
+  .feat_tit p::before{
+    display:none;
+  }
+  /* featured 타이틀 */
+  .feat_tit{
+    flex-flow:column wrap;
+    width:100%; padding-bottom:50px;
+  }
+  .feat_category{
+    display: block;
+    width: 100%; font-size:14px; text-align: right;
+  }
+  .feat_category ul li:nth-of-type(2){
+    padding:0 20px;
+  }
+
+
+  .news,
+  .bold_moves{
+    padding-bottom:80px;
+  }
+  .product li{
+    width:200px; padding-bottom:40px;
+  }
+  .product img{
+    width:200px;
+  }
+
+  /* 중간 큰 이미지 */
+  .ride_unleashed,
+  .bold_moves {
+    justify-content:left;
+    width:99%; margin: 0 auto;
+  }
+  .ride_tit{
+    padding-bottom:30px;
+  }
+  .bold_tit{
+    padding-left:0;
+  }
+  .rid_img,
+  .bold_img{
+    width:100%;
+  }
+  .bold_img{
+    margin-bottom:30px;
+  }
+  /* footer */
+  footer .sub_menu{
+    width:90%;
+  }
+}
+
+
+
+
+
+@media (max-width:600px){
+  /* main */
+  .banner_img{
+    height:400px;
+  }
+  .banner_tit{
+    padding:170px 0 0 20px;
+  }
+  h1{
+    font-size:6vw;
+  }
+  h2{
+    font-size:5vw;
+  }
+  .banner_tit a{
+    width:120px;
+  }
+  .more_box{
+    font-size:14px;
+  }
+  /* product */
+  .product{
+    padding:0 20px;
+  }
+  .product li{
+    width: 100%; padding-bottom:60px;
+  }
+  .product a{
+    display: block;
+    text-align:center;
+  }
+  .product img{
+    width:80%;
+  }
+  /* bicycle search */
+  .product li:nth-of-type(2), .product li:nth-of-type(5){
+    padding-bottom:60px;
+  }
+  .bicycle_search{
+    width:90%;
+  }
+  .bicycle_search:nth-of-type(2){
+    margin:40px 0;
+  }
+  .bicycle_list{
+    flex-flow: row wrap; justify-content: center;
+  }
+  .bicycle_txt{
+    font-size:4.5vw;
+  }
+  /* new */
+  .news img{
+    padding-bottom:20px;
+  }
+}
+
+
+
+@media (max-width:450px){
+  .banner_tit{
+    padding:200px 0 0 0;
+  }
+  .banner_tit a {
+    width: 110px;
+  }
+  .more_box{
+    line-height:2rem;
+  }
+
+
+  h5{
+    padding: 0 0 20px 0;
+  }
+
+  .rid_img, .bold_img{
+    height: 200px;
+  }
+  /* new */
+  .news ul li {
+    width:100%; padding:20px 0;
+  }
+  .news ul li:nth-child(2) {
+    padding-bottom:0;
+  }
+  .news img{
+    padding-bottom:10px;
+  }
+  /* footer */
+  footer .sub_menu{
+    flex-flow: column wrap;
+  }
+  .sub_menu_list{
+    padding-bottom:30px;
+  }
+  .sub_menu_list:last-child{
+    padding-bottom:0;
+  }
+  #sns_icn_face, #sns_icn{
+    padding-bottom:0;
+  }
+}

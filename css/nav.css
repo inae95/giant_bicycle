@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+header{
+  height:70px;
+  display:flex; flex-flow:row wrap; justify-content:space-between; align-items: center;
+}
+.logo{
+  width:124px; height:18px;
+}
+.logo img{
+  width:100%; height:100%;
+}
+
+/* nav */
+nav{
+  display:flex;
+}
+nav ul{
+  display:flex;
+}
+nav ul li{
+  padding:0 30px;
+}
+.fa-bars{
+  display:none;
+}
+
+/* 서브내비 */
+.hidemenu{
+  position:absolute; top:100px; left:0; padding-left:50%;
+  display:flex;
+  width:80%; transform:translate(-25%, 0)
+  /* display:none; */
+}
+.hidemenu_list{
+  display:flex; flex-flow:column wrap;
+  max-width:147px;/*  width:17.6666666667%;  */padding-right:10%; font-size: 15px;
+} 
+.hidemenu_list:nth-child(4){
+  padding:0;
+}
+.hidemenu_list p{
+  font-weight:500; padding-bottom: 20px;
+}
+.hidemenu_list .submenu li{
+  font-weight:400; padding:5px 0; float:left;
+}
+
+/* search */
+.search{
+  padding-left:20px;
+  /* width:17px;
+  justify-content:flex-end; */
+}
+
+.search .sear_hide{
+  position:absolute; top:70px; left:0;
+  display:flex; align-items:center; justify-content:center;
+  width:100%; background-color:white;
+  
+  display:none;
+}
+.search .sear_hide.active{
+  display:flex;
+}
+.search input{
+  display:block;
+  max-width:1200px; width:90%; height:20px; padding:5px 10px; margin:20px;
+  font-size:1rem; border:1px solid #666; outline:none;
+}
+
+
+
+
+
+@media (max-width:600px){
+  .fa-bars{
+    display:block;
+    font-size:1.5rem; cursor:pointer;
+  }
+  nav{
+    flex-flow:column; align-items:center;
+    position:absolute; top:70px; left:0;
+    width:100%; z-index:50;
+    border-bottom:1px solid #e6e6e6; background-color:#F5F5F5; 
+  }
+  nav ul{
+    flex-flow:column wrap;
+    width:100%; text-align:center;
+  }
+  nav ul li{
+    border-bottom: 1px solid #e6e6e6;
+  }
+  nav ul li:nth-of-type(5){
+    border-bottom:none;
+  }
+  nav ul li:hover,
+  .search:hover{
+    background-color:#0C2340;
+  }
+  nav ul li:hover a,
+  .search a:hover i{
+    color:white;
+  }
+  nav ul li a{
+    display:block;
+    width:100%; padding: 20px 0;
+  }
+
+  .search{
+    width:100%; padding-left:0; text-align:center;
+  }
+  .search a{
+    display:block;
+    width:100%; padding:20px 0 20px 0;
+  }
+}
