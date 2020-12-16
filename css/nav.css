@@ -3,7 +3,6 @@
 header{
   height:70px;
   display:flex; flex-flow:row wrap; justify-content:space-between; align-items: center;
-  position:relative;
 }
 .logo{
   width:124px; height:18px;
