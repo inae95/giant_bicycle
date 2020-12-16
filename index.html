@@ -7,14 +7,14 @@
     <!-- open graphic -->
     <meta property="og:url" content="#"> <!--포트폴리오 사이트-->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="inae_portfolio">
+    <meta property="og:title" content="자이언트 코리아 - 세계 최대의 글로벌 자전거 브랜드 I GIANT Bicycles (KR)">
     <meta property="og:image" content="#"> <!--포트폴리오 메인페이지 이미지-->
-    <meta property="og:description" content="welcome inae_portfolio">
+    <meta property="og:description" content="자이언트 코리아">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="inae_portfolio">
+    <meta name="twitter:title" content="자이언트 코리아 - 세계 최대의 글로벌 자전거 브랜드 I GIANT Bicycles (KR)">
     <meta name="twitter:url" content="#"> <!--github url 포폴 사이트-->
     <meta property="twitter:image" content="#"> <!--포트폴리오 메인페이지 이미지-->
-    <meta property="twitter:description" content="welcome inae_portfolio">
+    <meta property="twitter:description" content="자이언트 코리아">
   
     <!-- inpor -->
     <meta name="Keyword" content="html, css3, javascript portfolio portfolio website">
@@ -57,7 +57,6 @@
       <div class="menu">
         <nav>
           <ul>
-
             <li class="nav_tit"><a href="#">자전거</a>
               <!-- <div class="hidemenu">
                 <div class="hidemenu_list">
@@ -395,14 +394,14 @@
   );
 
 
-  var searicon = document.querySelector('.fa-search');
+  var searIcn = document.querySelector('.fa-search');
   var searbar = document.querySelector('.sear_hide');
 
-  searicon.addEventListener('click', function(){
-    // searbar.classList.remove('active');
-    searbar.classList.add('active');
-  });
-
+  $(document).ready(function(){
+    $(searIcn).click(function(){
+      $(searbar).toggle();
+    })
+  })
 
 
 
@@ -411,7 +410,7 @@
   // nav
   var navToggle = document.querySelector('nav');
   var toggleBtn = document.querySelector('.fa-bars');
-
+  
   $(document).ready(function(){
     $(toggleBtn).click(function(){
       $(navToggle).toggle();
